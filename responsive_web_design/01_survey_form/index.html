@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Generic Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Generic Survey Form</h1>
+    <p id="description">Please fill out the information below.</p>
+    <form id="survey-form">
+        <div>
+            <label id="name-label">Name</label>
+            <input id="name" name="name" type="text" placeholder="Enter your name" required/>
+        </div>
+        <div>
+            <label id="email-label">Email</label>
+            <input id="email" name="email" type="email" placeholder="Enter your email" required />
+        </div>
+        <div>
+            <label id="number-label">Age (optional)</label>
+            <input id="number" name="age" type="number" min="0" max="120" placeholder="Enter your age" />
+        </div>
+        <div>
+            <label>Question for dropdown?</label><select id="dropdown"><option>1</option><option>2</option></select>
+        </div>
+        <div>
+            <label>Question for radio buttons?</label>
+            <label>Option 1</label>
+            <input name="recommend" type="radio" value="1">
+            <label>Option 2</label>
+            <input type="radio" name="recommend" value="2">
+        </div>
+        <div>
+            <label>Checkbox option 1</label><input type="checkbox" value="1"/>
+            <label>Checkbox option 2</label><input type="checkbox" value="2"/>
+        </div>
+        <div>
+            <label>Textarea</label><textarea></textarea>
+        </div>
+        <div>
+            <button id="submit" type="submit">Submit</button>
+        </div>
+    </form>
+  </body>
+</html>

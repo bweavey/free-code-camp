@@ -1,0 +1,19 @@
+#header {
+    display: flex;
+    justify-content: space-around
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around
+}
+
+li {
+    list-style: none
+}
+
+@media (max-width: 650px) {
+    nav > ul {
+      flex-direction: column;
+    }
+  }
